@@ -1,12 +1,28 @@
-from flask import Flask, render_template, request, jsonify
+import mimetypes
+import os.path
+
+mimetypes.add_type('application/javascript', '.js')
+mimetypes.add_type('text/css', '.css')
+
+from flask import Flask, render_template, request, jsonify, send_from_directory
 from flask_cors import CORS
 from chat import get_response
 import nltk
 
 nltk.download('punkt')
 
-app = Flask(__name__)
+
+scriptPath = os.path.dirname(os.path.realpath(__file__))
+os.chdir(scriptPath)
+template_folder = os.path.join(os.getcwd(),'templates')
+static_folder = os.path.join(os.getcwd(),'static')
+
+app = Flask(__name__, template_folder=template_folder, static_folder=static_folder)
 CORS(app)
+
+@app.route('/css/<path:path>')
+def send_css(path):
+    return send_from_directory('css', path, mimetype='text/css')
 
 @app.get("/")
 def index_get():

@@ -1,6 +1,6 @@
-<!DOCTYPE html>
+<!--<!DOCTYPE html>-->
 <html lang="en">
-<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 
 <head>
     <meta charset="UTF-8">
@@ -8,6 +8,15 @@
 </head>
 <body>
 <div class="container">
+    <h1>Chatbot Lite v1.0.0</h1>
+    <p>Features:<br>
+        1. Yang bisa ditanyakan seputar cara klaim JHT, JKM, JKK, & JP<br>
+        2. Pola data yang digunakan menggunakan "tag", "patterns", & "response":<br>
+        &nbsp; - tag: mencakup kategori pertanyaan<br>
+        &nbsp; - patterns: mencakup pola percakapan/pertanyaan yang kemungkinan akan ditanyakan user<br>
+        &nbsp; - response: mencakup jawaban yang harus dikeluarkan chatbot untuk merespon pertanyaan yang ada di "patterns"<br>
+        3. Contoh data bisa dilihat disini: <a href="https://docs.google.com/spreadsheets/d/1d8W9O3mQKPE87ADPSyjLHRo7zbhpXmk3IK9Gvy-5AOI/edit?usp=sharing">Data Chatbot</a>
+    </p>
     <div class="chatbox">
         <div class="chatbox__support">
             <div class="chatbox__header">
@@ -36,7 +45,7 @@
     <script>
         $SCRIPT_ROOT = {{ request.script_root|tojson }};
     </script>
-    <script type="text/javascript" src="{{ url_for('static', filename='app.js') }}"></script>
+    <script type="module" src="{{ url_for('static', filename='app.js') }}"></script>
 
 </body>
 </html>

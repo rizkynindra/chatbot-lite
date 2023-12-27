@@ -36,6 +36,7 @@
     },
     {"tag": "klaim_jht",
      "patterns": [
+       "jht",
        "cara klaim jht?",
        "gimana cara klaim jht?",
        "klaim jht",
@@ -47,6 +48,7 @@
     },
     {"tag": "klaim_jkk",
      "patterns": [
+       "jkk",
        "cara klaim jkk?",
        "gimana cara klaim jkk?",
        "klaim jkk",
@@ -58,6 +60,7 @@
     },
     {"tag": "klaim_jkm",
     "patterns": [
+      "jkm",
       "cara klaim jkm?",
       "gimana cara klaim jkm?",
       "klaim jkm",
@@ -69,6 +72,7 @@
     },
     {"tag": "klaim_jp",
     "patterns": [
+      "jp",
       "cara klaim jp?",
       "gimana cara klaim jp?",
       "klaim jp",
