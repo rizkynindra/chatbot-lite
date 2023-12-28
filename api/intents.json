@@ -1,0 +1,96 @@
+{"intents": [
+    {"tag": "salam",
+     "patterns": [
+       "Hai",
+       "Hi",
+       "Halo",
+       "Apa Kabar",
+       "Selamat Pagi",
+       "Selamat Siang",
+       "Selamat Malam"
+     ],
+     "responses": [
+       "Halo!",
+       "Hai",
+       "Halo, ada yang bisa saya bantu?",
+       "Halo selamat datang",
+       "Hai Kawan"
+     ]
+    },
+    {"tag": "bye",
+     "patterns": [
+       "Dadah",
+       "Selamat Tinggal",
+       "Dah",
+       "Daah",
+       "Semoga harimu menyenangkan",
+       "Ok makasih",
+       "Sampai Jumpa Lagi",
+       "Ok bye"
+     ],
+     "responses": [
+       "Sampai jumpa lagi yaa",
+       "Kalau ada masalah, hubungi aku lagi ya",
+       "Semoga harimu menyenangkan!"
+     ]
+    },
+    {"tag": "klaim_jht",
+     "patterns": [
+       "jht",
+       "cara klaim jht?",
+       "gimana cara klaim jht?",
+       "klaim jht",
+       "bagaimana cara klaim jht?",
+       "cara klaim jht gimana?",
+       "cara klaim jaminan hari tua?"
+     ],
+     "responses": ["untuk klaim JHT syaratnya simple bro/sis, siapkan dokumen yang diperlukan seperti KTP dan kartu peserta BPJS Ketenagakerjaan. Kalau saldomu dibawah 10 juta, kamu bisa mengajukan klaim JHT melalui aplikasi JMO, download aja aplikasinya di play store atau apple store"]
+    },
+    {"tag": "klaim_jkk",
+     "patterns": [
+       "jkk",
+       "cara klaim jkk?",
+       "gimana cara klaim jkk?",
+       "klaim jkk",
+       "bagaimana cara klaim jkk?",
+       "cara klaim jkk gimana?",
+       "cara klaim jaminan kecelakaan kerja?"
+     ],
+     "responses": ["untuk klaim JKK bro/sis bisa siapkan KTP, kartu peserta BPJS Ketenagakerjaan, kronologis kecelakaan kerja, formulir tahap I (diserahkan ke kantor cabang atau PLKK maksimal 2x24 jam), formulir tahap II, surat keterangan dari dokter yang memeriksa, kuitansi biaya pengangkutan, kuitansi biaya pengobatan (kalau ada), dan dokumen pendukung lainnya kalau diperlukan"]
+    },
+    {"tag": "klaim_jkm",
+    "patterns": [
+      "jkm",
+      "cara klaim jkm?",
+      "gimana cara klaim jkm?",
+      "klaim jkm",
+      "bagaimana cara klaim jkm?",
+      "cara klaim jkm gimana?",
+      "cara klaim jaminan kematian?"
+    ],
+    "responses": ["kalau mau klaim JKM, syaratnya pesertanya harus meninggal dulu bro, soalnya kalau masih hidup ga bisa di klaim, hehe"]
+    },
+    {"tag": "klaim_jp",
+    "patterns": [
+      "jp",
+      "cara klaim jp?",
+      "gimana cara klaim jp?",
+      "klaim jp",
+      "bagaimana cara klaim jp?",
+      "cara klaim jp gimana?",
+      "cara klaim jaminan pensiun?"
+    ],
+    "responses": ["untuk klaim jaminan pensiun alias JP, pastikan kamu udah masuk usia pensiun dulu ya, setelah itu siapkan kartu peserta BPJS Ketenagakerjaanmu, KTP asli dan fotocopynya, dan juga fotocopy kartu keluargamu"]
+    },
+    {"tag": "end",
+    "patterns": [
+      "terima kasih",
+      "oke makasi ya",
+      "thx",
+      "makasi"
+    ],
+    "responses": ["sama - sama bro/sis sukses selalu"]
+    }
+
+]
+}
